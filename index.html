@@ -1,0 +1,336 @@
+<!doctype html>
+<html lang="id">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portofolio Pribadi</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+          rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+
+            <a class="navbar-brand" href="#beranda">Portofolio</a>
+
+            <button class="navbar-toggler" type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#menuNavbar"
+                    aria-controls="menuNavbar"
+                    aria-expanded="false"
+                    aria-label="Buka menu navigasi">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menuNavbar">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#beranda">Beranda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#proyek">Proyek</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#kontak">Kontak</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+    <section id="beranda" class="py-5 bg-light">
+        <div class="container py-5">
+            <div class="row align-items-center">
+
+                <div class="col-md-6">
+                    <h1 class="display-4 fw-bold">
+                        Halo, Saya Purnama
+                    </h1>
+
+                    <p class="lead">
+                        Saya adalah mahasiswa Informatika yang sedang
+                        belajar membuat website dan aplikasi. Saya senang
+                        mempelajari coding serta mengembangkan kemampuan
+                        di bidang teknologi.
+                    </p>
+
+                    <a href="#proyek" class="btn btn-primary btn-lg">
+                        Lihat Karya Saya
+                    </a>
+
+                    <button type="button" class="btn btn-outline-secondary btn-lg ms-2 mt-2 mt-sm-0" 
+                        data-bs-toggle="modal" data-bs-target="#profilModal">
+                        Lihat Profil Detail
+                    </button>
+                </div>
+
+                <div class="col-md-6 text-center mt-4 mt-md-0">
+                    <img src="img/foto-saya.jpeg" alt="Foto Purnama" class="img-fluid rounded-circle shadow" 
+                        style="width: 350px; height: 350px; object-fit: cover;">
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="proyek" class="py-5">
+        <div class="container">
+
+            <h2 class="text-center mb-2">Proyek Saya</h2>
+
+            <p class="text-center text-muted mb-5">
+                Beberapa contoh proyek pembelajaran saya.
+            </p>
+            <div class="row g-4">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body p-4">
+
+                            <h5 class="card-title fw-bold">
+                                PROYEK 1
+                            </h5>
+
+                            <h6 class="text-primary mb-3">
+                                Website Portofolio Pribadi
+                            </h6>
+
+                            <p class="card-text">
+                                Website untuk memperkenalkan diri dan
+                                menampilkan hasil karya menggunakan HTML,
+                                CSS, dan Bootstrap.
+                            </p>
+
+                            <div class="mt-3">
+                                <span class="badge bg-primary me-1">HTML</span>
+                                <span class="badge bg-primary me-1">CSS</span>
+                                <span class="badge bg-primary">Bootstrap</span>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body p-4">
+
+                            <h5 class="card-title fw-bold">
+                                PROYEK 2
+                            </h5>
+
+                            <h6 class="text-primary mb-3">
+                                Aplikasi Mobile
+                            </h6>
+
+                            <p class="card-text">
+                                Latihan membuat tampilan aplikasi mobile
+                                menggunakan Flutter dan bahasa pemrograman Dart.
+                            </p>
+
+                            <div class="mt-3">
+                                <span class="badge bg-primary me-1">Flutter</span>
+                                <span class="badge bg-primary">Dart</span>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body p-4">
+
+                            <h5 class="card-title fw-bold">
+                                PROYEK 3
+                            </h5>
+
+                            <h6 class="text-primary mb-3">
+                                Program Dasar Java
+                            </h6>
+
+                            <p class="card-text">
+                                Program sederhana untuk melatih logika
+                                dan memahami dasar pemrograman Java.
+                            </p>
+
+                            <div class="mt-3">
+                                <span class="badge bg-primary me-1">Java</span>
+                                <span class="badge bg-primary">Algoritma</span>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="kontak" class="py-5 bg-light">
+        <div class="container">
+
+            <h2 class="text-center mb-5">Hubungi Saya</h2>
+
+            <div class="row justify-content-center">
+                <div class="col-md-8 col-lg-6">
+
+                    <form class="needs-validation" novalidate>
+
+                        <div class="mb-3">
+                            <label for="inputNama" class="form-label">
+                                Nama Lengkap
+                            </label>
+
+                            <input type="text"
+                                   class="form-control"
+                                   id="inputNama"
+                                   required>
+
+                            <div class="invalid-feedback">
+                                Silakan masukkan nama Anda.
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="inputEmail" class="form-label">
+                                Alamat Email
+                            </label>
+
+                            <input type="email" class="form-control" id="inputEmail"required>
+
+                            <div class="invalid-feedback">
+                                Silakan masukkan email yang valid.
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="inputPesan" class="form-label">
+                                Pesan
+                            </label>
+
+                            <textarea class="form-control"
+                                      id="inputPesan"
+                                      rows="4"
+                                      required></textarea>
+
+                            <div class="invalid-feedback">
+                                Pesan tidak boleh kosong.
+                            </div>
+                        </div>
+                      
+                        <button type="submit" class="btn btn-primary w-100">
+                            Kirim Pesan
+                        </button>
+
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+<div class="modal fade" id="profilModal" tabindex="-1"
+     aria-labelledby="profilModalLabel" aria-hidden="true">
+
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+
+            <div class="modal-header">
+                <h5 class="modal-title" id="profilModalLabel">
+                    Sertifikat & Profil
+                </h5>
+
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Tutup"></button>
+            </div>
+  <div class="modal-body">
+                <p class="text-center mb-4">
+                    Beberapa sertifikat yang telah saya peroleh.
+                </p>
+
+                <div class="row g-3">
+
+                    <!-- SERTIFIKAT 1 -->
+                    <div class="col-12 col-md-6">
+                        <div class="card h-100">
+                            <img src="img/sertifikat_dicoding1.JPG" class="card-img-top" alt="Sertifikat Dicoding">
+
+                            <div class="card-body">
+                                <h6 class="card-title">
+                                    Akselerasi Karier dan Produktivitas dengan Gemini
+                                </h6>
+                                <p class="card-text text-muted small mb-0">
+                                    Dicoding Academy
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- SERTIFIKAT 2 -->
+                    <div class="col-12 col-md-6">
+                        <div class="card h-100">
+                            <img src="img/Sertifikat Peserta (288).png" class="card-img-top" alt="Sertifikat kedua">
+
+                            <div class="card-body">
+                                <h6 class="card-title">
+                                Launching Event of the Digital & At Skitis Hub 2026
+                                </h6>
+                                <p class="card-text text-muted small mb-0">
+                                    UNDP (United Nations Development Programme) Indonesia
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- SERTIFIKAT 3 -->
+                    <div class="col-12 col-md-6">
+                        <div class="card h-100">
+                            <img src="img/sertifikat-ngabuburit.png" class="card-img-top" alt="Sertifikat ketiga">
+
+                            <div class="card-body">
+                                <h6 class="card-title">
+                                    Workshop Fundamental Programming & IoT
+                                </h6>
+                                <p class="card-text text-muted small mb-0">
+                                    Muh. Rafli Rasyid, S.Kom., M.T.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary"
+                        data-bs-dismiss="modal">
+                    Tutup
+                </button>
+            </div>
+
+        </div>
+    </div>
+</div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        const forms = document.querySelectorAll('.needs-validation');
+        Array.from(forms).forEach(function(form) {
+            form.addEventListener('submit', function(event) {
+
+                if (!form.checkValidity()) {
+                    event.preventDefault();
+                    event.stopPropagation();
+                } else {
+                    event.preventDefault();
+                }
+
+                form.classList.add('was-validated');
+            });
+        });
+    </script>
+
+<footer class="bg-dark text-white text-center py-3">
+    <p class="mb-0">Pemrograman Web Kelas A2025</p>
+</footer>
+</body>
+</html>
